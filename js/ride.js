@@ -73,8 +73,7 @@ WildRydes.map = WildRydes.map || {};
     function handlePickupChanged() {
         var requestButton = $('#request');
         requestButton.text('Request Unicorn');
-        requestButton.prop('disabled', false);
-        console.log('Pickup location changed:', WildRydes.map.selectedPoint);
+        requestButton.prop('disabled', false);         
     }
 
     function handleRequestClick(event) {
@@ -106,5 +105,6 @@ WildRydes.map = WildRydes.map || {};
         $('#updates').append($('<li>' + text + '</li>'));
     }
 }(jQuery));
+
 
 
