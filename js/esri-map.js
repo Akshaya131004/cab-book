@@ -1,12 +1,7 @@
 /*global WildRydes _config*/
 
 var WildRydes = window.WildRydes || {};
-WildRydes.map = {
-    selectedPoint: null,
-    setLocation: function(point) {
-        this.selectedPoint = point;
-    }
-};
+WildRydes.map = WildRydes.map || {};
 
 (function esriMapScopeWrapper($) {
     require([
@@ -125,4 +120,5 @@ WildRydes.map = {
         };
     });
 }(jQuery));
+
 
